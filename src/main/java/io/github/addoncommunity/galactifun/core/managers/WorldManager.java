@@ -411,7 +411,7 @@ public final class WorldManager implements Listener {
                     toBePlaced.setType(Material.ICE);
                 }
             } else if (manager.getEffectAt(l, AtmosphericEffect.HEAT) > 1) {
-                p.getWorld().spawnParticle(Particle.SMOKE_NORMAL, l, 5);
+                p.getWorld().spawnParticle(Particle.SMOKE, l, 5);
             } else {
                 e.setCancelled(false);
             }

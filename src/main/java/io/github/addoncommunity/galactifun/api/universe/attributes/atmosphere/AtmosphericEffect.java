@@ -44,7 +44,7 @@ public final class AtmosphericEffect {
             SpaceSuitStat.COLD_RESISTANCE, (player, level) -> {
         player.damage(level * 2);
         player.addPotionEffect(new PotionEffect(
-                PotionEffectType.SLOW,
+                PotionEffectType.SLOWNESS,
                 200,
                 Math.min(200, level),
                 false,

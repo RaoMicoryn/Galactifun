@@ -6,7 +6,7 @@ import lombok.Getter;
 
 import org.bukkit.GameRule;
 import org.bukkit.World;
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 
 /**
  * Represents the amount of sunlight a celestial object s

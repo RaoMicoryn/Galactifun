@@ -2,7 +2,7 @@ package io.github.addoncommunity.galactifun.api.universe.attributes;
 
 import javax.annotation.Nonnull;
 
-import org.apache.commons.lang.Validate;
+import org.apache.commons.lang3.Validate;
 
 import io.github.addoncommunity.galactifun.util.Util;
 

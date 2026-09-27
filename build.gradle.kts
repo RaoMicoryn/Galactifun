@@ -1,6 +1,6 @@
 plugins {
     `java-library`
-    id("com.github.johnrengelman.shadow") version "8.1.1"
+    id("com.gradleup.shadow") version "8.3.5"
     id("io.freefair.lombok") version "8.6"
     id("net.minecrell.plugin-yml.bukkit") version "0.5.3"
     id("xyz.jpenilla.run-paper") version "2.2.0"
@@ -15,8 +15,8 @@ repositories {
 
 dependencies {
     api("io.github.mooy1:InfinityLib:1.3.7")
-    compileOnly("io.papermc.paper:paper-api:1.18.2-R0.1-SNAPSHOT")
-    compileOnly("com.github.StarWishsama:Slimefun4:2024.3")
+    compileOnly("io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT")
+    compileOnly("com.github.SlimefunGuguProject:Slimefun4:2025.1")
     compileOnly("com.google.code.findbugs:jsr305:3.0.2")
     compileOnly("net.guizhanss:GuizhanLibPlugin:1.7.6")
 
@@ -26,7 +26,7 @@ dependencies {
 group = "io.github.addoncommunity.galactifun"
 version = "MODIFIED"
 description = "Galactifun"
-java.sourceCompatibility = JavaVersion.VERSION_17
+java.sourceCompatibility = JavaVersion.VERSION_21
 
 tasks.shadowJar {
     relocate("io.github.mooy1.infinitylib", "io.github.addoncommunity.galactifun.infinitylib")
@@ -41,7 +41,7 @@ bukkit {
     main = "io.github.addoncommunity.galactifun.Galactifun"
     version = project.version.toString()
     authors = listOf("Seggan", "Mooy1", "GallowsDove", "ProfElements")
-    apiVersion = "1.18"
+    apiVersion = "1.21"
     softDepend = listOf("ClayTech", "GuizhanLibPlugin", "BentoBox")
     loadBefore = listOf("Multiverse-Core")
     depend = listOf("Slimefun")
@@ -60,5 +60,5 @@ tasks.runServer {
         url("https://blob.build/dl/Slimefun4/Dev/1116")
     }
     maxHeapSize = "4G"
-    minecraftVersion("1.20.4")
+    minecraftVersion("1.21.1")
 }
