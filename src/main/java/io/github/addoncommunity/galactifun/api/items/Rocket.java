@@ -6,7 +6,6 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Nonnull;
-import javax.annotation.ParametersAreNonnullByDefault;
 
 import lombok.Getter;
 
@@ -27,7 +26,6 @@ import org.bukkit.entity.Entity;
 import org.bukkit.entity.Item;
 import org.bukkit.entity.LivingEntity;
 import org.bukkit.entity.Player;
-import org.bukkit.event.block.BlockBreakEvent;
 import org.bukkit.event.block.BlockPlaceEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
@@ -53,7 +51,6 @@ import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.core.attributes.RecipeDisplayItem;
-import io.github.thebusybiscuit.slimefun4.core.handlers.BlockBreakHandler;
 import io.github.thebusybiscuit.slimefun4.core.handlers.BlockPlaceHandler;
 import io.github.thebusybiscuit.slimefun4.core.handlers.BlockUseHandler;
 import io.github.thebusybiscuit.slimefun4.implementation.Slimefun;
@@ -107,17 +104,6 @@ public abstract class Rocket extends SlimefunItem implements RecipeDisplayItem {
                 b.setBlockData(data, true);
             }
         });
-
-        addItemHandler(new BlockBreakHandler(false, false) {
-            @Override
-            @ParametersAreNonnullByDefault
-            public void onPlayerBreak(BlockBreakEvent e, ItemStack itemStack, List<ItemStack> list) {
-                if (Boolean.parseBoolean(BlockStorage.getLocationInfo(e.getBlock().getLocation(), "isLaunching"))) {
-                    e.setCancelled(true);
-                    e.getPlayer().sendMessage(ChatColor.RED + "火箭正在发射!");
-                }
-            }
-        });
     }
 
     private void openGUI(@Nonnull Player p, @Nonnull Block b) {
@@ -169,8 +155,8 @@ public abstract class Rocket extends SlimefunItem implements RecipeDisplayItem {
                 p.sendMessage(ChatColor.RED + "火箭正在发射!");
                 return;
             }
-            BSUtils.addBlockInfo(b.getLocation().getBlock(), "isLaunching", true);
 
+            BSUtils.addBlockInfo(b.getLocation().getBlock(), "isLaunching", true);
             p.sendMessage(ChatColor.YELLOW + "请输入你要降落的坐标 <x> <z> (例如: -123 456) 或输入其他内容取消:");
             ChatUtils.awaitInput(p, s -> {
                 if (Util.COORD_PATTERN.matcher(s).matches()) {
