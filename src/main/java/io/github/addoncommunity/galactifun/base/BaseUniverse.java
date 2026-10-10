@@ -41,7 +41,7 @@ import io.github.addoncommunity.galactifun.base.universe.saturn.Titan;
 @UtilityClass
 public final class BaseUniverse {
 
-    public static final TheUniverse THE_UNIVERSE = new TheUniverse("The Universe", "宇宙");
+    public static final TheUniverse THE_UNIVERSE = new TheUniverse("The Universe", "The Universe");
     public static final Galaxy MILKY_WAY = new Galaxy(
             "Milky Way",
             "&fMilky Way",
