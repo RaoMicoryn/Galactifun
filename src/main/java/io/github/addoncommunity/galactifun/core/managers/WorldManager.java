@@ -348,7 +348,7 @@ public final class WorldManager implements Listener {
         if (b != null && Tag.BEDS.isTagged(b.getType())) {
             e.setCancelled(true);
             p.setBedSpawnLocation(p.getLocation(), true);
-            p.sendMessage("已设置重生点");
+            p.sendMessage("Respawn point set");
         }
     }
 
@@ -372,8 +372,8 @@ public final class WorldManager implements Listener {
                     int times = this.respawnTimes.merge(p.getUniqueId(), 1, Integer::sum);
                     if (times > 3) {
                         p.sendMessage(ChatColor.YELLOW + """
-                                监测到循环死亡
-                                你是否要回到地球？ (yes/no)"""
+                                A possible respawn loop has been detected!
+                                Do you wish to go back to Earth? (yes/no)"""
                         );
                         ChatUtils.awaitInput(p, s -> {
                             if (s.equalsIgnoreCase("yes")) {
