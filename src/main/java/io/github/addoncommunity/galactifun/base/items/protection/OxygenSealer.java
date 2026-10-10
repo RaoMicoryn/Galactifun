@@ -138,7 +138,7 @@ public final class OxygenSealer extends MenuBlock implements EnergyNetComponent,
         Block b = pos.getBlock();
 
         if (!BSUtils.getStoredBoolean(l, PROTECTING)) {
-            updateHologram(b, "&c电量不足");
+            updateHologram(b, "&cNot Enough Energy");
             return;
         }
 
@@ -165,7 +165,7 @@ public final class OxygenSealer extends MenuBlock implements EnergyNetComponent,
         Optional<Set<BlockPosition>> returned = Util.floodFill(l, range);
         // not sealed; continue on to the next block
         if (returned.isEmpty()) {
-            updateHologram(b, "&c区域未密封或太大");
+            updateHologram(b, "&cArea Not Sealed or Too Big");
             return;
         }
 
@@ -174,7 +174,7 @@ public final class OxygenSealer extends MenuBlock implements EnergyNetComponent,
             Galactifun.protectionManager().addOxygenBlock(bp);
         }
 
-        updateHologram(b, "&a可操作");
+        updateHologram(b, "&aOperational");
     }
 
 }

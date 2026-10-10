@@ -10,9 +10,9 @@ import lombok.RequiredArgsConstructor;
 @SuppressWarnings("ClassCanBeRecord")
 public final class SpaceSuitStat {
 
-    public static final SpaceSuitStat HEAT_RESISTANCE = new SpaceSuitStat("&c抗热");
-    public static final SpaceSuitStat COLD_RESISTANCE = new SpaceSuitStat("&b抗寒");
-    public static final SpaceSuitStat RADIATION_RESISTANCE = new SpaceSuitStat("&4抗辐射");
+    public static final SpaceSuitStat HEAT_RESISTANCE = new SpaceSuitStat("&cHeat Resistance");
+    public static final SpaceSuitStat COLD_RESISTANCE = new SpaceSuitStat("&bCold Resistance");
+    public static final SpaceSuitStat RADIATION_RESISTANCE = new SpaceSuitStat("&4Radiation Resistance");
 
     private final String name;
 

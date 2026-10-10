@@ -23,32 +23,32 @@ public final class PlanetaryType extends UniversalType {
     /**
      * Orbit, asteroid belts, etc
      */
-    public static final PlanetaryType SPACE = new PlanetaryType("太空", "SPACE");
+    public static final PlanetaryType SPACE = new PlanetaryType("Space", "SPACE");
 
     /**
      * Gaseous planets ex: jupiter
      */
-    public static final PlanetaryType GAS_GIANT = new PlanetaryType("气态巨星", "GAS_GIANT");
+    public static final PlanetaryType GAS_GIANT = new PlanetaryType("Gas giant", "GAS_GIANT");
 
     /**
      * Frozen planets ex: neptune
      */
-    public static final PlanetaryType FROZEN = new PlanetaryType("冰霜", "FROZEN");
+    public static final PlanetaryType FROZEN = new PlanetaryType("Frozen", "FROZEN");
 
     /**
      * Mostly liquid planets
      */
-    public static final PlanetaryType OCEANIC = new PlanetaryType("海洋", "OCEANIC");
+    public static final PlanetaryType OCEANIC = new PlanetaryType("Oceanic", "OCEANIC");
 
     /**
      * Rocky/Solid planets ex: earth, mars, moon
      */
-    public static final PlanetaryType TERRESTRIAL = new PlanetaryType("陆地", "TERRESTRIAL");
+    public static final PlanetaryType TERRESTRIAL = new PlanetaryType("Terrestrial", "TERRESTRIAL");
 
     /**
      * Unknown
      */
-    public static final PlanetaryType UNKNOWN = new PlanetaryType("未知", "UNKNOWN");
+    public static final PlanetaryType UNKNOWN = new PlanetaryType("Unknown", "UNKNOWN");
 
     public PlanetaryType(String name, String id) {
         super(id, name);

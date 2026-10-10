@@ -19,9 +19,9 @@ public final class CoreRecipeType {
     public static final RecipeType CHEMICAL_REACTOR = new RecipeType(Galactifun.createKey("chemical_reactor"), BaseItems.CHEMICAL_REACTOR);
     public static final RecipeType WORLD_GEN = new RecipeType(Galactifun.createKey("world_gen"), new CustomItemStack(
             Material.END_STONE,
-            "&f自然生成",
+            "&fNaturally Generated",
             "",
-            "&7在外星来获取此物品"
+            "&7Find this material on a alien world"
     ));
 
 }

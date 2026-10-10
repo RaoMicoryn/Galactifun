@@ -52,7 +52,7 @@ public final class AssemblyItemGroup extends FlexItemGroup {
     public void open(Player p, PlayerProfile profile, SlimefunGuideMode layout) {
         profile.getGuideHistory().add(this, 1);
 
-        ChestMenu menu = new ChestMenu("星系配方");
+        ChestMenu menu = new ChestMenu("Assembly Table Recipes");
         menu.setEmptySlotsClickable(false);
 
         for (int i = 0; i < 9; ++i) {

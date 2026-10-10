@@ -88,18 +88,18 @@ public final class Galactifun extends AbstractAddon {
                 return;
             }
             if (!PaperLib.isPaper()) {
-                log(Level.SEVERE, "Galactifun 只支持Paper以及Paper的衍生服务端(例如Airplane和Purpur)");
-                log(Level.SEVERE, "请使用Paper或者Paper的衍生服务端");
+                log(Level.SEVERE, "Galactifun only supports Paper and its forks (i.e. Airplane and Purpur)");
+                log(Level.SEVERE, "Please use Paper or a fork of Paper");
                 shouldDisable = true;
             }
             if (Slimefun.getMinecraftVersion().isBefore(MinecraftVersion.MINECRAFT_1_17)) {
-                log(Level.SEVERE, "Galactifun需要在 Minecraft 1.17 及以上版本中运行");
-                log(Level.SEVERE, "请使用Minecraft 1.17 及以上版本");
+                log(Level.SEVERE, "Galactifun only supports Minecraft 1.17 and above");
+                log(Level.SEVERE, "Please use Minecraft 1.17 or above");
                 shouldDisable = true;
             }
             if (Bukkit.getPluginManager().isPluginEnabled("ClayTech")) {
-                log(Level.SEVERE, "Galactifun 不能和 ClayTech 同时运行");
-                log(Level.SEVERE, "请移除 ClayTech 或 Galactifun");
+                log(Level.SEVERE, "Galactifun will not work properly with ClayTech");
+                log(Level.SEVERE, "Please disable ClayTech");
                 shouldDisable = true;
             }
 

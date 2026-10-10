@@ -70,10 +70,10 @@ public final class ForcefieldGenerator extends SlimefunItem implements EnergyNet
             Player p = e.getPlayer();
             if (BSUtils.getStoredBoolean(b, ACTIVE)) {
                 deactivate(b);
-                p.sendMessage("已关闭力场");
+                p.sendMessage("Deactivated");
             } else {
                 activate(b);
-                p.sendMessage("已激活力场");
+                p.sendMessage("Activated");
             }
         });
     }

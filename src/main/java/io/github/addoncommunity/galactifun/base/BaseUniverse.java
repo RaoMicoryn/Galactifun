@@ -44,7 +44,7 @@ public final class BaseUniverse {
     public static final TheUniverse THE_UNIVERSE = new TheUniverse("The Universe", "宇宙");
     public static final Galaxy MILKY_WAY = new Galaxy(
             "Milky Way",
-            "&f银河系",
+            "&fMilky Way",
             GalaxyType.SPIRAL,
             Orbit.lightYears(12_000_000_000D, 0),
             THE_UNIVERSE,
@@ -52,7 +52,7 @@ public final class BaseUniverse {
     );
     public static final StarSystem SOLAR_SYSTEM = new StarSystem(
             "Solar System",
-            "&c太阳系",
+            "&cSolar System",
             StarSystemType.NORMAL,
             Orbit.lightYears(27_000, 250_000_000D),
             MILKY_WAY,
@@ -60,7 +60,7 @@ public final class BaseUniverse {
     );
     public static final PlanetaryObject JUPITER = new PlanetaryObject(
             "Jupiter",
-            "&6木星",
+            "&6Jupiter",
             PlanetaryType.GAS_GIANT,
             Orbit.kilometers(778_340_821L, 12D),
             SOLAR_SYSTEM,
@@ -77,7 +77,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld IO = new Io(
             "Io",
-            "&6木卫一 - 艾奥",
+            "&6Io",
             PlanetaryType.TERRESTRIAL,
             Orbit.kilometers(421_800L, 2),
             JUPITER,
@@ -92,7 +92,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld EUROPA = new Europa(
             "Europa",
-            "&b木卫二 - 欧罗巴",
+            "&bEuropa",
             PlanetaryType.FROZEN,
             Orbit.kilometers(671_100, 3),
             JUPITER,
@@ -103,7 +103,7 @@ public final class BaseUniverse {
     );
     public static final PlanetaryObject SATURN = new PlanetaryObject(
             "Saturn",
-            "&f土星",
+            "&fSaturn",
             PlanetaryType.GAS_GIANT,
             Orbit.kilometers(1_490_500_000, 29D),
             SOLAR_SYSTEM,
@@ -119,7 +119,7 @@ public final class BaseUniverse {
     );
     public static final PlanetaryWorld EARTH = new Earth(
             "Earth",
-            "&a地球",
+            "&aEarth",
             PlanetaryType.TERRESTRIAL,
             Orbit.kilometers(149_600_000L, 1D),
             SOLAR_SYSTEM,
@@ -130,7 +130,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld EARTH_ORBIT = new EarthOrbit(
             "Earth Orbit",
-            "&a地球高空轨道",
+            "&aEarth Orbit",
             PlanetaryType.SPACE,
             Orbit.kilometers(24_000, 1),
             EARTH,
@@ -140,7 +140,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld VENUS = new Venus(
             "Venus",
-            "&e金星",
+            "&eVenus",
             PlanetaryType.TERRESTRIAL,
             Orbit.kilometers(108_860_000L, 225),
             SOLAR_SYSTEM,
@@ -159,7 +159,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld THE_MOON = new TheMoon(
             "The Moon",
-            "&7月球",
+            "&7The Moon",
             PlanetaryType.TERRESTRIAL,
             Orbit.kilometers(382_500L, 27),
             EARTH,
@@ -172,7 +172,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld MARS = new Mars(
             "Mars",
-            "&4火星",
+            "&4Mars",
             PlanetaryType.TERRESTRIAL,
             Orbit.kilometers(227_943_824L, 687),
             SOLAR_SYSTEM,
@@ -189,7 +189,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld TITAN = new Titan(
             "Titan",
-            "&6土卫六 - 泰坦",
+            "&6Titan",
             PlanetaryType.TERRESTRIAL,
             Orbit.kilometers(1_200_000L, 16),
             SATURN,
@@ -208,7 +208,7 @@ public final class BaseUniverse {
     );
     public static final AlienWorld ENCALADUS = new Enceladus(
             "Enceladus",
-            "&b土卫二",
+            "&bEnceladus",
             PlanetaryType.FROZEN,
             Orbit.kilometers(237_948L, 1),
             SATURN,

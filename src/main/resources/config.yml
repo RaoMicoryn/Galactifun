@@ -24,15 +24,16 @@ rockets:
   
   # 火箭发射时的提示
   launch-msgs: 
-    - 丢弃降落伞
-    - 补充零食
-    - 校准行星
-    - 点燃太阳
-    - 添加有趣的发射提示
-    - 感谢饼干
-    - 模拟月球降落
-    - 向前一小步
-    - 人类一大步
+    - Forgetting parachutes
+    - Restocking snack bin
+    - Aligning planets
+    - Igniting sun
+    - Inventing funny launch messages
+    - Thanking TheBusyBiscuit
+    - Faking Moon landings
+    - Taking one small step
+    - Going Boomer
+    - Not going home
 
 other:
 
